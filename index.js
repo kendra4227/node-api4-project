@@ -12,6 +12,9 @@ app.use(express.static(path.join(__dirname,"client/build")))
 app.use("/api/",(_,res)=>{
     res.json({data:"The API is serving data!!!"})
 })
+app.use("/",(_,res)=>{
+    
+})
 
 app.listen(port,()=>{
     console.log(`Server is alive on port ${port}`)
