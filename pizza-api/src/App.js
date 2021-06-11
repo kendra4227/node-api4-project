@@ -2,17 +2,17 @@ import './App.css';
 import React from "react"
 import ReactDOM from "react-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Pizza App</h1>
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <h1>Pizza App</h1>
         
        
-      </header>
-    </div>
-  );
-}
+//       </header>
+//     </div>
+//   );
+//}
 class PizzaBuilder extends React.Component {
 
   state = {
@@ -313,4 +313,4 @@ function OrderConfirmation({ closeConfirmationBtnRef, handleOrderSubmit }) {
 
 ReactDOM.render(<PizzaBuilder />, document.querySelector('#root'));
 
-export default App;
+export default PizzaBuilder;
