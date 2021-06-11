@@ -13,7 +13,7 @@ app.use("/api/",(_,res)=>{
     res.json({data:"The API is serving data!!!"})
 })
 app.get("/",(req,res)=>{
-    res.send("https://pizza-app-api1.herokuapp.com/")
+    res.send("https://localhost:3000")
     
 })
 
