@@ -17,7 +17,7 @@ app.listen(port,()=>{
     console.log(`Server is alive on port ${port}`)
 })
 app.use("*",(_,res)=>{
-    res.sendFile(path.join(__dirname,"pizza-app/build","index.html"))
+    res.sendFile(path.join(__dirname,"pizza-api/build","index.html"))
 })
 
 console.log(__dirname)
