@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static(path.join(__dirname,"client/build")))
 
-app.use("/api/",(_,res)=>{
+app.use("/pizza-app-api1.herokuapp.com/",(_,res)=>{
     res.json({data:"The API is serving data!!!"})
 })
 
