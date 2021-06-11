@@ -12,7 +12,8 @@ app.use(express.static(path.join(__dirname,"client/build")))
 app.use("/api/",(_,res)=>{
     res.json({data:"The API is serving data!!!"})
 })
-app.use("/",(_,res)=>{
+app.get("/",(req,res)=>{
+    res.send("https://pizza-app-api1.herokuapp.com/")
     
 })
 
