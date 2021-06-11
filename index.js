@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname,"client/build")))
 app.use("/api/",(_,res)=>{
     res.json({data:"The API is serving data!!!"})
 })
-app.get("/",(req,res)=>{
-    res.send("https://localhost:3000")
+app.post("/",(req,res)=>{
+    res.send("POST request to the homepage")
     
 })
 
